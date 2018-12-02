@@ -33,7 +33,19 @@ void bubbleSort(int[] data) {
 ```
 
 ## 선택 정렬
-
+```java
+ void selectSort(int[] data) {
+        for (int i = 0; i < data.length - 1; i++) {
+            int indexMin = i;
+            for (int j = i + 1; j < data.length; j++) {
+                if (data[indexMin] < data[j]) {
+                    indexMin = j;
+                }
+            }
+            Utils.swap(data, indexMin, i);
+        }
+    }
+```
 ![](https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif)
 
 ## 시간 복합도

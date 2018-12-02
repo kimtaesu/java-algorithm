@@ -16,10 +16,14 @@ public class SelectSort {
     }
 
     void selectSort(int[] data) {
-        for (int i = 0; i < data.length; i++) {
-            for (int j = i; j < data.length; j++) {
-
+        for (int i = 0; i < data.length - 1; i++) {
+            int indexMin = i;
+            for (int j = i + 1; j < data.length; j++) {
+                if (data[indexMin] < data[j]) {
+                    indexMin = j;
+                }
             }
+            Utils.swap(data, indexMin, i);
         }
     }
 }
