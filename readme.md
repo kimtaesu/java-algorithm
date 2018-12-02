@@ -1,3 +1,6 @@
+## 시간 복합도
+![](https://gmlwjd9405.github.io/images/algorithm-insertion-sort/sort-time-complexity.png)
+
 ## 삽입 정렬
 ```java
 void insertSort(int[] data) {
@@ -47,6 +50,3 @@ void bubbleSort(int[] data) {
     }
 ```
 ![](https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif)
-
-## 시간 복합도
-![](https://gmlwjd9405.github.io/images/algorithm-insertion-sort/sort-time-complexity.png)
