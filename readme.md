@@ -50,3 +50,34 @@ void bubbleSort(int[] data) {
     }
 ```
 ![](https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif)
+
+## 퀵 정렬
+```java
+void quickSort(int[] data, int left, int right) {
+    if (left < right) {
+        int pivot = partition(data, left, right);
+
+        quickSort(data, left, pivot - 1);
+        quickSort(data, pivot + 1, right);
+    }
+}
+```
+
+```java
+int partition(int[] data, int left, int right) {
+    int pivot = (left + right) / 2;
+    while (left < right) {
+        while (left < right && data[left] < data[pivot]) left++;
+        while (left < right && data[right] > data[pivot]) right++;
+        if (left < right) {
+            Utils.swap(data, left, right);
+        }
+    }
+    Utils.swap(data, left, pivot);
+    return left;
+}
+```
+![](https://gmlwjd9405.github.io/images/algorithm-quick-sort/quick-sort.png)
+
+## 합병정렬
+![](https://gmlwjd9405.github.io/images/algorithm-merge-sort/merge-sort-concepts.png)

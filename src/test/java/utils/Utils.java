@@ -6,4 +6,10 @@ public class Utils {
         data[from] = data[to];
         data[to] = temp;
     }
+
+    public static void printArr(int[] data) {
+        for (int i = 0; i < data.length; i++) {
+            System.out.print(data[i] + " ");
+        }
+    }
 }
