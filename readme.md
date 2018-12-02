@@ -1,6 +1,15 @@
 ## 시간 복합도
 ![](https://gmlwjd9405.github.io/images/algorithm-insertion-sort/sort-time-complexity.png)
 
+## 안정정렬 VS 불안정 정렬
+안정정렬: 동일한 값에 대해 순서가 바뀔수 없음. 
+
+불안정정렬: 동일한 값에 대해 순서가 바뀔수 있음.
+
+* 안정 정렬
+> Bubble, Insertion, Merge
+* 불안정 정렬
+> Selection, Shell, Heap, Quick
 ## 삽입 정렬
 ```java
 void insertSort(int[] data) {
